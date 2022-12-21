@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biscoito da sorte</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="screen1">
-        <h1>Qual é a sua sorte de hoje?</h1>
+      <h1>Qual é a sua sorte de hoje?</h1>
 
-        <p>Abra o biscoito e descubra!</p>
+      <p>Abra o biscoito e descubra!</p>
 
-        <img src="biscouit.svg" alt="biscoito da sorte" class="shake">
+      <img onclick="handleClick()"  src="biscouit.svg" alt="biscoito da sorte" class="shake" />
+    </div>
+
+    <div class="screen2 hide">
+      <h1>Aqui está a sua sorte de hoje:</h1>
+
+      <div class="ticket">
+        <p class="textLuck">
+          Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe
+          o teu.
+        </p>
+      </div>
+      <img src="./biscouit_crash.svg" alt="biscoito quebrado" />
+
+      <button onclick="handleResetClick()" class="btn-try">Abrir outro biscoito</button>
     </div>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
